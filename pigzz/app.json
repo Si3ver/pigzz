@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/classic/classic"
+    "pages/classic/classic",
+    "components/like/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#FFFF00",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "小珍猪猪",
-    "backgroundColor": "#D80000",
+    "backgroundColor": "#E0E0E0",
     "enablePullDownRefresh": true
   }
 }
