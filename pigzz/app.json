@@ -9,5 +9,6 @@
     "navigationBarTitleText": "小珍猪猪",
     "backgroundColor": "#E0E0E0",
     "enablePullDownRefresh": true
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

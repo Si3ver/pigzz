@@ -1,2 +1,2 @@
 <!--pages/classic/classic.wxml-->
-<like-cmp />
+<like-cmp like="{{classic.like_status}}" count="{{classic.fav_nums}}" />
