@@ -1,10 +1,11 @@
 {
   "usingComponents": {
-    "epsoide-cmp": "/components/epsoide/index",
+    "episode-cmp": "/components/episode/index",
     "like-cmp": "/components/like/index",
     "movie-cmp": "/components/classic/movie/index",
     "music-cmp": "/components/classic/music/index",
     "essay-cmp": "/components/classic/essay/index",
-    "navi-cmp": "/components/navi/index"
+    "navi-cmp": "/components/navi/index",
+    "button-cmp":"/components/image-button/index"
   }
 }
