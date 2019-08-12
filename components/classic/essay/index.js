@@ -4,11 +4,9 @@ Component({
   behaviors: [classicBeh],
   properties: {
   },
-
   data: {
 
   },
-
   methods: {
 
   }

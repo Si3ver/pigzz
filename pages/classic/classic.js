@@ -10,46 +10,31 @@ Page({
     latest: true,
     first: false
   },
-
   onLoad: function (options) {
     classicModel.getLatest((res) => {
-      console.log(res)
       this.setData({
         classic: res
       })
     })
   },
-  onReady: function () {
-
-  },
-  onShow: function () {
-
-  },
-  onHide: function () {
-
-  },
-  onUnload: function () {
-
-  },
-  onPullDownRefresh: function () {
-
-  },
-  onReachBottom: function () {
-
-  },
-  onShareAppMessage: function () {
-
-  },
-
   onLike: function (event) {
-    console.log(event)
     let behavior = event.detail.behavior
     likeModel.like(behavior, this.data.classic.id, this.data.classic.type)
   },
   onNext: function(event) {
-    console.log(event)
+    this._updateClassic('next')
   },
   onPrevious: function(event) {
-    console.log(event)
+    this._updateClassic('previous')
+  },
+  _updateClassic: function(nextOrPrevious) {
+    let index = this.data.classic.index
+    classicModel.getClassic(index, nextOrPrevious, (res) => {
+      this.setData({
+        classic: res,
+        latest: classicModel.isLatest(res.index),
+        first: classicModel.isFirst(res.index)
+      })
+    })
   }
 })

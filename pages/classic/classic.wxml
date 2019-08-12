@@ -1,6 +1,6 @@
 <view class="container">
   <view class="header">
-    <epsoide-cmp index="{{'8'}}" class="epsoide" class="epsoide"></epsoide-cmp>
+    <epsoide-cmp index="{{classic.index}}" class="epsoide" class="epsoide"></epsoide-cmp>
     <like-cmp bind:like="onLike" like="{{classic.like_status}}" count="{{classic.fav_nums}}" class="like" />
   </view>
   <movie-cmp img="{{classic.image}}" content="{{classic.content}}" />
