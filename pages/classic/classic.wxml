@@ -1,7 +1,7 @@
 <view class="container">
   <view class="header">
     <epsoide-cmp index="{{classic.index}}" class="epsoide" class="epsoide"></epsoide-cmp>
-    <like-cmp bind:like="onLike" like="{{classic.like_status}}" count="{{classic.fav_nums}}" class="like" />
+    <like-cmp bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" class="like" />
   </view>
   <movie-cmp img="{{classic.image}}" content="{{classic.content}}" />
   <navi-cmp bind:left="onNext" bind:right="onPrevious" title="{{classic.title}}" first="{{first}}" latest="{{latest}}" class="navi" />
