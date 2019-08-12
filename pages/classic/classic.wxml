@@ -3,6 +3,15 @@
     <epsoide-cmp index="{{classic.index}}" class="epsoide" class="epsoide"></epsoide-cmp>
     <like-cmp bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" class="like" />
   </view>
-  <movie-cmp img="{{classic.image}}" content="{{classic.content}}" />
+  <movie-cmp hidden="{{classic.type != 100}}"
+    img="{{classic.image}}"
+    content="{{classic.content}}" />
+  <music-cmp wx:if="{{classic.type==200}}"
+    img="{{classic.image}}"
+    content="{{classic.content}}"
+    src="{{classic.url}}" />
+  <essay-cmp hidden="{{classic.type != 300}}"
+    img="{{classic.image}}"
+    content="{{classic.content}}" />
   <navi-cmp bind:left="onNext" bind:right="onPrevious" title="{{classic.title}}" first="{{first}}" latest="{{latest}}" class="navi" />
 </view>
